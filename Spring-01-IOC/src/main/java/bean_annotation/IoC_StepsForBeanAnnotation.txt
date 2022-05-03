@@ -1,0 +1,13 @@
+Steps for IoC with bean annotation
+
+1. Create POJOs
+2. Create Container
+     - ApplicationContext container = new AnnotationConfigAApplicationContext();
+3. Create Configuration Class
+4. Label your config class with @Configuration
+5. Create methods that return object of your classes
+6. Label them with @Bean
+7. Give classname of configuration class to ApplicationContext
+       - ApplicationContext container = new AnnotationConfigApplicationContext(Classname.class)
+8. We can call beans with
+       - container.getBean(ClassName.class);
