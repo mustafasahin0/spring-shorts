@@ -1,0 +1,13 @@
+Steps for IoC with Stereotype Annotation
+
+1. Create your POJOs
+2. Create the container
+    - ApplicationContext container = new AnnotationConfigApplicationContext();
+3. Create configuration class
+4. Label your config class with @Configuration and @ComponentScan
+5. Label your POJOs that you need bean with @Component
+6. Give classname of configuration class to ApplicationContext
+    - ApplicationContext container = new AnnotationApplicationContext(Classname.class)
+
+7. We can call beans with
+    -     container.getBean(ClassName.class)
